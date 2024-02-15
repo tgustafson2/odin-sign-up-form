@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "Norse Bold";
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+body{
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.image-sidebar{
+    position: relative;
+}
+
+.image-sidebar img{
+    height: 100vh;
+}
+
+.odin-title{
+    position: absolute;
+    width: 100%;
+    top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    opacity: 0.6;
+    color: white;
+    font-size: 5em;
+    font-family: "Norse Bold";
+    
+}
+
+.odin-title img{
+    height: 1em;
+}
+
+.img-credit{
+    position: absolute;
+    bottom: 1rem;
+    text-align: center;
+    color: white;
+    left: 0;
+    right: 0;
+}
+

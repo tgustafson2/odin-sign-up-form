@@ -5,6 +5,7 @@
 
 body{
     margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .container{
     display: flex;
@@ -55,5 +56,98 @@ body{
 
 .heading,
 .create-account{
-    background-color: whitesmoke;
+    background-color: rgb(250, 250, 250);
+    padding-left: 25px;
+}
+
+.heading{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+}
+
+.info_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 64px;
+}
+
+.input_div{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    height: 64px;
+}
+
+.info{
+    background-color: white;
+    box-shadow: 8px 8px 8px lightgray;
+    position: relative;
+    z-index: 2;
+    justify-content: space-evenly;
+    height: 300px;
+}
+
+.info>h3{
+    padding: 0;
+    margin: 0;
+}
+
+input{
+    background-color: rgb(255, 254, 254);
+    border-radius: 5px;
+    border-color: #E5E7EB;
+    height: 20px;
+    width: 256px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+label{
+    text-transform: uppercase;
+}
+
+.input_div > input:focus{
+    border-color: blue;
+    box-shadow: 2px 2px 2px lightgray;
+}
+input:focus-visible{
+    outline: none;
+}
+
+.create-account{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    gap: 20px;
+}
+.create-account>button{
+    height: 48px;
+    width: 200px;
+    background-color: #596D48;
+    color: white;
+    border-radius: 5px;
+    border: 1px;
+    font-size: large;
+}
+.create-account>div>a{
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.error{
+    border-color: red;
+}
+p{
+    padding: 0;
+    margin: 0;
 }

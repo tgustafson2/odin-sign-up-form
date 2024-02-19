@@ -3,6 +3,13 @@
     src: url(./fonts/Norse-Bold.otf);
 }
 
+:root{
+    --background-text-color: rgb(250, 250, 250);
+    --background-form-color: white;
+    --background-input-color: rgb(255, 254, 254);
+    --green-color: #596D48;
+}
+
 body{
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -56,7 +63,7 @@ body{
 
 .heading,
 .create-account{
-    background-color: rgb(250, 250, 250);
+    background-color: var(--background-text-color);
     padding-left: 25px;
 }
 
@@ -87,7 +94,7 @@ body{
 }
 
 .info{
-    background-color: white;
+    background-color: var(--background-form-color);
     box-shadow: 8px 8px 8px lightgray;
     position: relative;
     z-index: 2;
@@ -101,7 +108,7 @@ body{
 }
 
 input{
-    background-color: rgb(255, 254, 254);
+    background-color: var(--background-input-color);
     border-radius: 5px;
     border-color: #E5E7EB;
     height: 20px;
@@ -132,14 +139,15 @@ input:focus-visible{
 .create-account>button{
     height: 48px;
     width: 200px;
-    background-color: #596D48;
+    background-color: var(--green-color);
     color: white;
     border-radius: 5px;
     border: 1px;
     font-size: large;
+    box-shadow: 2px 2px 4px gray;
 }
 .create-account>div>a{
-    color: #596D48;
+    color: var(--green-color);
     text-decoration: none;
     font-weight: bold;
 }
